@@ -1,0 +1,101 @@
+.fullbody{
+    margin: 0;
+    display: flex; justify-content: center; flex-direction: column;
+    width: 100vw; height: 100vh;
+}
+
+.analyze-body{
+    display: flex; justify-content: center; flex-direction: column;
+    width: 90vw; height: 100vh;
+}
+
+h1{
+    display: flex; justify-content: center; font-weight: bold; margin: 30px;
+}
+
+
+.containers{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 90%; height: 85%; gap: 15px;
+    margin-bottom: 50px;
+}
+
+.left{
+    height: 100%; padding: 10px;
+    border-radius: 10px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+    display: flex; flex-direction: column;
+}
+
+.left input, .left select, .left textarea{
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.left select {
+    width: calc(100% - 20px);
+}
+
+.left label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.left button {
+    margin: 15px 10px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.left button:hover {
+    background-color: #0056b3;
+}
+
+.left button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.right{
+    width: 100%; height: 100%;
+    display: grid; grid-template-rows: 3fr 2fr;
+    gap: 10px;
+}
+
+.a-div{
+    overflow-y: scroll;
+    width: 100%; 
+    height: 100%;
+}
+.b-div{
+    overflow-y: scroll;
+    width: 100%; 
+    height: 100%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+tr,td, th{
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+th{
+    background-color: rgb(214, 239, 255);
+}
